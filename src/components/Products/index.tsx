@@ -1,8 +1,8 @@
 'use client';
+import Cart from '@/components/Cart';
+import ColorFilter from '@/components/ColorFilter';
+import ProductList from '@/components/ProductList';
 import { useProductsStore } from '@/store';
-import Cart from './Cart';
-import ColorFilter from './ColorFilter';
-import ProductList from './ProductList';
 
 export default function Products() {
   const { products, filteredProducts, color, setColor } = useProductsStore();

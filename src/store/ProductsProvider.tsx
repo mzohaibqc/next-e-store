@@ -7,41 +7,34 @@ import React, {
   useCallback,
   useReducer,
 } from 'react';
-
 import type { Product } from '@/components/ProductItem';
 
-const productsInitialState = {
-  products: [],
-  color: undefined,
-  filteredProducts: [],
-};
-
-type ProductFilterAction = {
+export type ProductFilterAction = {
   type: 'SET_COLOR';
   payload: string | undefined;
 };
 
-type SetProductsAction = {
+export type SetProductsAction = {
   type: 'SET_PRODUCTS';
   payload: Product[];
 };
 
-type ProductAction = SetProductsAction | ProductFilterAction;
+export type ProductsAction = SetProductsAction | ProductFilterAction;
 
-type ProductStoreState = {
+export type ProductStoreState = {
   products: Product[];
   color: string | undefined;
   filteredProducts: Product[];
 };
 
-const initialProductState: ProductStoreState = {
+export const initialProductsState: ProductStoreState = {
   products: [],
   color: undefined,
   filteredProducts: [],
 };
-function productsReducer(
+export function productsReducer(
   state: ProductStoreState,
-  action: ProductAction
+  action: ProductsAction
 ): ProductStoreState {
   switch (action.type) {
     case 'SET_PRODUCTS':
@@ -66,9 +59,9 @@ function productsReducer(
 }
 
 function useProductsContext({ products }: { products: Product[] }) {
-  const [state, dispatch]: [ProductStoreState, Dispatch<ProductAction>] =
+  const [state, dispatch]: [ProductStoreState, Dispatch<ProductsAction>] =
     useReducer(productsReducer, {
-      ...initialProductState,
+      ...initialProductsState,
       products,
       filteredProducts: products,
     });
@@ -86,7 +79,7 @@ function useProductsContext({ products }: { products: Product[] }) {
 export const ProductsContext = createContext<
   ReturnType<typeof useProductsContext>
 >({
-  ...productsInitialState,
+  ...initialProductsState,
   setProducts: () => {},
   setColor: () => {},
 });

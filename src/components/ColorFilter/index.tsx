@@ -7,8 +7,7 @@ import Select, {
   OptionProps,
   SingleValueProps,
 } from 'react-select';
-
-import Color from './Color';
+import Color from '@/components/Color';
 
 type ColorOption = { label: string; value: string };
 
@@ -46,6 +45,8 @@ export default function ProductFilter({
       instanceId="color-filter"
       placeholder="Select Color"
       aria-label="Filter Color"
+      classNamePrefix="rs"
+      // aria-activedescendant="color-filter"
       components={{ SingleValue, Option }}
       isClearable
       classNames={{
@@ -61,8 +62,8 @@ export default function ProductFilter({
           }),
       }}
       value={value}
-      onChange={(option: any) => {
-        onChange(option?.value);
+      onChange={(option) => {
+        onChange((option as ColorOption | null)?.value);
       }}
     />
   );
@@ -73,7 +74,7 @@ const SingleValue = ({ children, ...props }: SingleValueProps<ColorOption>) => {
     <components.SingleValue {...props}>
       <div className="flex items-center gap-2">
         <Color color={props.data.value} />
-        {children}
+        <span className="selected-option">{children}</span>
       </div>
     </components.SingleValue>
   );

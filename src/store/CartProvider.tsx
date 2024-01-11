@@ -7,7 +7,6 @@ import React, {
   useCallback,
   useReducer,
 } from 'react';
-
 import type { Product } from '@/components/ProductItem';
 
 type Resolve<T> = {
@@ -16,7 +15,7 @@ type Resolve<T> = {
 
 export type CartItem = Resolve<Product & { count: number }>;
 
-type CartAction = {
+export type CartAction = {
   type: 'ADD_ITEM' | 'REMOVE_ITEM' | 'CLEAR_ITEM';
   payload: Product;
 };
@@ -51,7 +50,7 @@ function updateCartItemCount(
     return cartItem;
   });
 }
-function cartReducer(
+export function cartReducer(
   state: CartStoreState,
   action: CartAction
 ): CartStoreState {

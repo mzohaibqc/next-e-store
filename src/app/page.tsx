@@ -25,7 +25,7 @@ export default async function Home() {
     return <div>{error}</div>;
   }
   return (
-    <div>
+    <div className="mt-2 md:mt-4">
       <ProductsProvider products={products}>
         <Products />
       </ProductsProvider>
