@@ -1,5 +1,6 @@
 'use client';
 
+import classNames from 'classnames';
 import { useMemo } from 'react';
 import Select, {
   components,
@@ -49,11 +50,15 @@ export default function ProductFilter({
       isClearable
       classNames={{
         control: (state) =>
-          state.isFocused
-            ? '!border-gray-800 !shadow-[0_0_0_1px_#000000]'
-            : '!border-gray-300',
+          classNames('!border-gray-300 !rounded-md', {
+            '!border-gray-800 !rounded-md !shadow-[0_0_0_1px_#000000]':
+              state.isFocused,
+          }),
         option: (state) =>
-          state.isSelected ? '!bg-gray-300 !text-black' : '!bg-white',
+          classNames('!bg-white', {
+            '!bg-gray-300 !text-black': state.isSelected,
+            '!bg-gray-200': state.isFocused,
+          }),
       }}
       value={value}
       onChange={(option: any) => {

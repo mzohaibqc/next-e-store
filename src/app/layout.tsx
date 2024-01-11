@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 
+import Header from '@/components/Header';
 import { CartProvider } from '@/store';
 import './globals.css';
 
@@ -22,7 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <main className="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Header />
+        <main className="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
           <CartProvider>{children}</CartProvider>
         </main>
       </body>
