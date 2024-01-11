@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FBFBFB;
+  --soft-grey: #DFDFDF;
+  --grey: #445964;
+  --dark-grey: #263138;
+  --card-shadow: 0 8px 30px rgb(0,0,0,0.12);
+}
+
+body {
+  background: var(--background);
+}
+.icon-btn {
+  @apply w-8 h-8 rounded-md flex items-center justify-center cursor-pointer disabled:cursor-not-allowed;
+}
