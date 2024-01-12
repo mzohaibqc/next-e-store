@@ -7,17 +7,17 @@ All components have complete code coverage and are fully unit tested. E2E tests 
 ### Vitest Tests
 
 ```
-> npm run test
+npm run test
 ```
 
 ```
-> npm test coverage
+npm test coverage
 ```
 
 ### Cypress Tests
 
 ```
-> npm run cy:open
+npm run cy:open
 ```
 
 ## Code Coverage

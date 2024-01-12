@@ -1,9 +1,9 @@
 {
-    "editor.formatOnSave": true,
-    "files.autoSave": "onFocusChange",
-    "prettier.singleQuote": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.sortMembers":true,
-    },
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "prettier.singleQuote": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.sortMembers": "explicit"
+  }
 }
