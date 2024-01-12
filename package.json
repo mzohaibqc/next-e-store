@@ -11,7 +11,7 @@
     "coverage": "vitest run --coverage",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "badge": "coverage-badger -r coverage/clover.xml -d coverage/"
+    "coverage-badge": "coverage-badger -r coverage/clover.xml -d coverage/"
   },
   "dependencies": {
     "classnames": "^2.5.1",
