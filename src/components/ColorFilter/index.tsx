@@ -40,6 +40,7 @@ export default function ProductFilter({
   );
   return (
     <Select
+      id="color-filter"
       className={className}
       options={options}
       instanceId="color-filter"

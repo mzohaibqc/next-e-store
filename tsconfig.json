@@ -1,5 +1,12 @@
 {
-  "compilerOptions": {
+  "ts-node": {
+      "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "node",
+      }
+    },
+    "compilerOptions": {
+    "baseUrl": "./",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -22,6 +29,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "vitest.config.mjs"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "vitest.config.mjs", "@testing-library/cypress/types/index.d.ts"],
   "exclude": ["node_modules"]
 }
