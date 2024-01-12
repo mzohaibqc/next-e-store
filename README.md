@@ -1,5 +1,7 @@
 # E-Store
 
+![Coverage](./coverage/coverage.svg)
+
 All components have complete code coverage and are fully unit tested. E2E tests are cypress based.
 
 ## Test

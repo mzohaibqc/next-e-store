@@ -80,8 +80,8 @@ export const ProductsContext = createContext<
   ReturnType<typeof useProductsContext>
 >({
   ...initialProductsState,
-  setProducts: () => {},
-  setColor: () => {},
+  setProducts: /* istanbul ignore next */ () => {},
+  setColor: /* istanbul ignore next */ () => {},
 });
 
 type Props = Omit<ProviderProps<ProductStoreState>, 'value'> & {

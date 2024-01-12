@@ -117,9 +117,9 @@ function useCartContext() {
 export const CartContext = createContext<ReturnType<typeof useCartContext>>({
   total: 0,
   cart: [],
-  addItem: () => {},
-  removeItem: () => {},
-  clearItem: () => {},
+  addItem: /* istanbul ignore next */ () => {},
+  removeItem: /* istanbul ignore next */ () => {},
+  clearItem: /* istanbul ignore next */ () => {},
 });
 
 type Props = Omit<ProviderProps<CartStoreState>, 'value'>;
