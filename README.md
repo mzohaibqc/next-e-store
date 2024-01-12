@@ -1,6 +1,34 @@
+# E-Store
+
+All components have complete code coverage and are fully unit tested. E2E tests are cypress based.
+
+## Test
+
+### Vitest Tests
+
+```
+> npm run test
+```
+
+```
+> npm test coverage
+```
+
+### Cypress Tests
+
+```
+> npm run cy:open
+```
+
+## Code Coverage
+
+![Code Coverage](public/code-coverage.png)
+
+## Task
+
 Objective: Create a basic product listing/basket page with data from https://my-json-server.typicode.com/benirvingplt/products/products
 
-Format: Build and test a React application that implements the following user stories. Use whatever libraries you are most comfortable with. 
+Format: Build and test a React application that implements the following user stories. Use whatever libraries you are most comfortable with.
 
 PLT-1: Viewing product listings
 Given I am on the home page

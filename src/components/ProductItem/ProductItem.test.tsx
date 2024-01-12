@@ -57,9 +57,12 @@ describe('ProductItem', () => {
     expect(removeButton).toBeDefined;
     fireEvent.click(removeButton);
     expect(mockCart.removeItem.mock.calls[0][0]).toEqual(product);
-    const clearButton = screen.getByLabelText('Remove Item');
+    const clearButton = screen.getByTestId(`product-${product.id}-clear`);
     expect(clearButton).toBeDefined;
     fireEvent.click(clearButton);
     expect(mockCart.clearItem.mock.calls[0][0]).toEqual(product);
+
+    // Create snapshot
+    expect(container).toMatchSnapshot();
   });
 });

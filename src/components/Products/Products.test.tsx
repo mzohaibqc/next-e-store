@@ -115,6 +115,8 @@ describe('Products', () => {
         .getByTestId(`product-${product.id}-remove`)
         .hasAttribute('disabled')
     ).toBeTruthy();
+    // Create snapshot
+    expect(container).toMatchSnapshot();
   });
 });
 

@@ -1,0 +1,681 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Products > Products should get data form store and show all products 1`] = `
+<div>
+  <div
+    class="py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+  >
+    <h1
+      class="text-3xl font-semibold"
+    >
+      Products
+    </h1>
+    <div
+      class="w-full max-w-xs css-b62m3t-container"
+      id="color-filter"
+    >
+      <span
+        class="css-1f43avz-a11yText-A11yText"
+        id="react-select-color-filter-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        class="css-1f43avz-a11yText-A11yText"
+        role="log"
+      />
+      <div
+        class="!border-gray-300 !rounded-md rs__control css-13cymwt-control"
+      >
+        <div
+          class="rs__value-container css-1fdsijx-ValueContainer"
+        >
+          <div
+            class="rs__placeholder css-1jqq78o-placeholder"
+            id="react-select-color-filter-placeholder"
+          >
+            Select Color
+          </div>
+          <div
+            class="rs__input-container css-qbdosj-Input"
+            data-value=""
+          >
+            <input
+              aria-activedescendant=""
+              aria-autocomplete="list"
+              aria-describedby="react-select-color-filter-placeholder"
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-label="Filter Color"
+              autocapitalize="none"
+              autocomplete="off"
+              autocorrect="off"
+              class="rs__input"
+              id="react-select-color-filter-input"
+              role="combobox"
+              spellcheck="false"
+              style="opacity: 0; width: 100%; grid-area: 1 / 2; min-width: 2px; border: 0px; margin: 0px; outline: 0; padding: 0px;"
+              tabindex="0"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="rs__indicators css-1hb7zxy-IndicatorsContainer"
+        >
+          <span
+            class="rs__indicator-separator css-1u9des2-indicatorSeparator"
+          />
+          <div
+            aria-hidden="true"
+            class="rs__indicator rs__dropdown-indicator css-1xc3v61-indicatorContainer"
+          >
+            <svg
+              aria-hidden="true"
+              class="css-tj5bde-Svg"
+              focusable="false"
+              height="20"
+              viewBox="0 0 20 20"
+              width="20"
+            >
+              <path
+                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex flex-col lg:flex-row gap-4 pb-6"
+  >
+    <div
+      class="grid grid-cols-1 gap-4 flex-1"
+      data-testid="products-list"
+    >
+      <div
+        data-testid="product-1"
+      >
+        <div
+          class="flex flex-col sm:flex-row rounded-md overflow-hidden bg-white p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+        >
+          <div
+            class="img relative w-full h-[380px] sm:w-[150px] sm:h-[220px]"
+          >
+            <img
+              alt="Product Image"
+              class="rounded-md"
+              data-nimg="fill"
+              data-testid="product-1-img"
+              decoding="async"
+              fetchpriority="high"
+              sizes="100vw"
+              src="/_next/image?url=http%3A%2F%2Fcdn-img.prettylittlething.com%2F9%2F0%2Fa%2Fa%2F90aa90903a135ee59594f47c7685aa7ef3046e44_cly8063_1.jpg%3Fimwidth%3D1024&w=3840&q=75"
+              srcset="/_next/image?url=http%3A%2F%2Fcdn-img.prettylittlething.com%2F9%2F0%2Fa%2Fa%2F90aa90903a135ee59594f47c7685aa7ef3046e44_cly8063_1.jpg%3Fimwidth%3D1024&w=640&q=75 640w, /_next/image?url=http%3A%2F%2Fcdn-img.prettylittlething.com%2F9%2F0%2Fa%2Fa%2F90aa90903a135ee59594f47c7685aa7ef3046e44_cly8063_1.jpg%3Fimwidth%3D1024&w=750&q=75 750w, /_next/image?url=http%3A%2F%2Fcdn-img.prettylittlething.com%2F9%2F0%2Fa%2Fa%2F90aa90903a135ee59594f47c7685aa7ef3046e44_cly8063_1.jpg%3Fimwidth%3D1024&w=828&q=75 828w, /_next/image?url=http%3A%2F%2Fcdn-img.prettylittlething.com%2F9%2F0%2Fa%2Fa%2F90aa90903a135ee59594f47c7685aa7ef3046e44_cly8063_1.jpg%3Fimwidth%3D1024&w=1080&q=75 1080w, /_next/image?url=http%3A%2F%2Fcdn-img.prettylittlething.com%2F9%2F0%2Fa%2Fa%2F90aa90903a135ee59594f47c7685aa7ef3046e44_cly8063_1.jpg%3Fimwidth%3D1024&w=1200&q=75 1200w, /_next/image?url=http%3A%2F%2Fcdn-img.prettylittlething.com%2F9%2F0%2Fa%2Fa%2F90aa90903a135ee59594f47c7685aa7ef3046e44_cly8063_1.jpg%3Fimwidth%3D1024&w=1920&q=75 1920w, /_next/image?url=http%3A%2F%2Fcdn-img.prettylittlething.com%2F9%2F0%2Fa%2Fa%2F90aa90903a135ee59594f47c7685aa7ef3046e44_cly8063_1.jpg%3Fimwidth%3D1024&w=2048&q=75 2048w, /_next/image?url=http%3A%2F%2Fcdn-img.prettylittlething.com%2F9%2F0%2Fa%2Fa%2F90aa90903a135ee59594f47c7685aa7ef3046e44_cly8063_1.jpg%3Fimwidth%3D1024&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; object-position: 50% 30%; color: transparent;"
+            />
+          </div>
+          <div
+            class="info flex-1 px-2 sm:px-4 py-2 flex flex-col"
+          >
+            <div
+              class="flex justify-between"
+            >
+              <h2
+                class="text-xl font-semibold"
+              >
+                Black Sheet Strappy Textured Glitter Bodycon Dress
+              </h2>
+            </div>
+            <div
+              class="flex-1 flex flex-col items-center sm:items-end justify-end gap-3"
+            >
+              <div
+                class="flex justify-between items-center w-full sm:max-w-xs mt-6"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <p
+                    class="text-lg font-medium"
+                  >
+                    Color:
+                  </p>
+                  <div
+                    class="w-6 h-6 rounded-md bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+                    data-testid="product-1-color"
+                    style="background-color: rgb(0, 0, 0);"
+                  >
+                    <span
+                      class="sr-only color-value"
+                    >
+                      Black
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <p
+                    class="text-lg font-medium"
+                  >
+                    Price:
+                  </p>
+                  <p
+                    class="text-xl font-medium"
+                  >
+                    £
+                    <span
+                      data-testid="product-1-price"
+                    >
+                      10.00
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full border border-gray-200 px-2 py-1 rounded-md sm:max-w-xs flex justify-around items-center"
+              >
+                <button
+                  aria-label="Remove One Item"
+                  class="w-8 h-8 rounded-md flex items-center justify-center cursor-pointer disabled:cursor-not-allowed text-lg hover:bg-gray-100 hover:border hover:border-gray-300 text-lg icon-btn"
+                  data-testid="product-1-remove"
+                  disabled=""
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                    />
+                  </svg>
+                </button>
+                <span
+                  class="text-lg px-5  border rounded-md text-center"
+                  data-testid="product-1-count"
+                >
+                  0
+                </span>
+                <button
+                  aria-label="Add One Item"
+                  class="w-8 h-8 rounded-md flex items-center justify-center cursor-pointer disabled:cursor-not-allowed text-lg hover:bg-gray-100 hover:border hover:border-gray-300 text-lg icon-btn"
+                  data-testid="product-1-add"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <button
+                class="w-full sm:max-w-xs text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-300 font-medium rounded-md text-sm px-5 py-2.5 disabled:bg-gray-400 disabled:cursor-not-allowed dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                data-testid="product-1-clear"
+                disabled=""
+              >
+                Remove all Items
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-testid="product-2"
+      >
+        <div
+          class="flex flex-col sm:flex-row rounded-md overflow-hidden bg-white p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+        >
+          <div
+            class="img relative w-full h-[380px] sm:w-[150px] sm:h-[220px]"
+          >
+            <img
+              alt="Product Image"
+              class="rounded-md"
+              data-nimg="fill"
+              data-testid="product-2-img"
+              decoding="async"
+              fetchpriority="high"
+              sizes="100vw"
+              src="/_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2F3%2F6%2F5%2Fa%2F365a5d1dce6a2b77b564379b302c9d83afccf33b_cmd2051_1.jpg%3Fimwidth%3D1024&w=3840&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2F3%2F6%2F5%2Fa%2F365a5d1dce6a2b77b564379b302c9d83afccf33b_cmd2051_1.jpg%3Fimwidth%3D1024&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2F3%2F6%2F5%2Fa%2F365a5d1dce6a2b77b564379b302c9d83afccf33b_cmd2051_1.jpg%3Fimwidth%3D1024&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2F3%2F6%2F5%2Fa%2F365a5d1dce6a2b77b564379b302c9d83afccf33b_cmd2051_1.jpg%3Fimwidth%3D1024&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2F3%2F6%2F5%2Fa%2F365a5d1dce6a2b77b564379b302c9d83afccf33b_cmd2051_1.jpg%3Fimwidth%3D1024&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2F3%2F6%2F5%2Fa%2F365a5d1dce6a2b77b564379b302c9d83afccf33b_cmd2051_1.jpg%3Fimwidth%3D1024&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2F3%2F6%2F5%2Fa%2F365a5d1dce6a2b77b564379b302c9d83afccf33b_cmd2051_1.jpg%3Fimwidth%3D1024&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2F3%2F6%2F5%2Fa%2F365a5d1dce6a2b77b564379b302c9d83afccf33b_cmd2051_1.jpg%3Fimwidth%3D1024&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2F3%2F6%2F5%2Fa%2F365a5d1dce6a2b77b564379b302c9d83afccf33b_cmd2051_1.jpg%3Fimwidth%3D1024&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; object-position: 50% 30%; color: transparent;"
+            />
+          </div>
+          <div
+            class="info flex-1 px-2 sm:px-4 py-2 flex flex-col"
+          >
+            <div
+              class="flex justify-between"
+            >
+              <h2
+                class="text-xl font-semibold"
+              >
+                Stone Ribbed Strappy Cut Out Detail Bodycon Dress
+              </h2>
+            </div>
+            <div
+              class="flex-1 flex flex-col items-center sm:items-end justify-end gap-3"
+            >
+              <div
+                class="flex justify-between items-center w-full sm:max-w-xs mt-6"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <p
+                    class="text-lg font-medium"
+                  >
+                    Color:
+                  </p>
+                  <div
+                    class="w-6 h-6 rounded-md bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+                    data-testid="product-2-color"
+                    style="background-color: rgb(239, 207, 182);"
+                  >
+                    <span
+                      class="sr-only color-value"
+                    >
+                      Stone
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <p
+                    class="text-lg font-medium"
+                  >
+                    Price:
+                  </p>
+                  <p
+                    class="text-xl font-medium"
+                  >
+                    £
+                    <span
+                      data-testid="product-2-price"
+                    >
+                      4.00
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full border border-gray-200 px-2 py-1 rounded-md sm:max-w-xs flex justify-around items-center"
+              >
+                <button
+                  aria-label="Remove One Item"
+                  class="w-8 h-8 rounded-md flex items-center justify-center cursor-pointer disabled:cursor-not-allowed text-lg hover:bg-gray-100 hover:border hover:border-gray-300 text-lg icon-btn"
+                  data-testid="product-2-remove"
+                  disabled=""
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                    />
+                  </svg>
+                </button>
+                <span
+                  class="text-lg px-5  border rounded-md text-center"
+                  data-testid="product-2-count"
+                >
+                  0
+                </span>
+                <button
+                  aria-label="Add One Item"
+                  class="w-8 h-8 rounded-md flex items-center justify-center cursor-pointer disabled:cursor-not-allowed text-lg hover:bg-gray-100 hover:border hover:border-gray-300 text-lg icon-btn"
+                  data-testid="product-2-add"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <button
+                class="w-full sm:max-w-xs text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-300 font-medium rounded-md text-sm px-5 py-2.5 disabled:bg-gray-400 disabled:cursor-not-allowed dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                data-testid="product-2-clear"
+                disabled=""
+              >
+                Remove all Items
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-testid="product-3"
+      >
+        <div
+          class="flex flex-col sm:flex-row rounded-md overflow-hidden bg-white p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+        >
+          <div
+            class="img relative w-full h-[380px] sm:w-[150px] sm:h-[220px]"
+          >
+            <img
+              alt="Product Image"
+              class="rounded-md"
+              data-nimg="fill"
+              data-testid="product-3-img"
+              decoding="async"
+              fetchpriority="high"
+              sizes="100vw"
+              src="/_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Fd%2Fc%2F3%2F3%2Fdc337260f9ecefdb99a8c8e98cd73ccb1b79cea5_cmb6804_4.jpg%3Fimwidth%3D1024&w=3840&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Fd%2Fc%2F3%2F3%2Fdc337260f9ecefdb99a8c8e98cd73ccb1b79cea5_cmb6804_4.jpg%3Fimwidth%3D1024&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Fd%2Fc%2F3%2F3%2Fdc337260f9ecefdb99a8c8e98cd73ccb1b79cea5_cmb6804_4.jpg%3Fimwidth%3D1024&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Fd%2Fc%2F3%2F3%2Fdc337260f9ecefdb99a8c8e98cd73ccb1b79cea5_cmb6804_4.jpg%3Fimwidth%3D1024&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Fd%2Fc%2F3%2F3%2Fdc337260f9ecefdb99a8c8e98cd73ccb1b79cea5_cmb6804_4.jpg%3Fimwidth%3D1024&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Fd%2Fc%2F3%2F3%2Fdc337260f9ecefdb99a8c8e98cd73ccb1b79cea5_cmb6804_4.jpg%3Fimwidth%3D1024&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Fd%2Fc%2F3%2F3%2Fdc337260f9ecefdb99a8c8e98cd73ccb1b79cea5_cmb6804_4.jpg%3Fimwidth%3D1024&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Fd%2Fc%2F3%2F3%2Fdc337260f9ecefdb99a8c8e98cd73ccb1b79cea5_cmb6804_4.jpg%3Fimwidth%3D1024&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Fd%2Fc%2F3%2F3%2Fdc337260f9ecefdb99a8c8e98cd73ccb1b79cea5_cmb6804_4.jpg%3Fimwidth%3D1024&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; object-position: 50% 30%; color: transparent;"
+            />
+          </div>
+          <div
+            class="info flex-1 px-2 sm:px-4 py-2 flex flex-col"
+          >
+            <div
+              class="flex justify-between"
+            >
+              <h2
+                class="text-xl font-semibold"
+              >
+                Black Frill Tie Shoulder Bodycon Dress
+              </h2>
+            </div>
+            <div
+              class="flex-1 flex flex-col items-center sm:items-end justify-end gap-3"
+            >
+              <div
+                class="flex justify-between items-center w-full sm:max-w-xs mt-6"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <p
+                    class="text-lg font-medium"
+                  >
+                    Color:
+                  </p>
+                  <div
+                    class="w-6 h-6 rounded-md bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+                    data-testid="product-3-color"
+                    style="background-color: rgb(0, 0, 0);"
+                  >
+                    <span
+                      class="sr-only color-value"
+                    >
+                      Black
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <p
+                    class="text-lg font-medium"
+                  >
+                    Price:
+                  </p>
+                  <p
+                    class="text-xl font-medium"
+                  >
+                    £
+                    <span
+                      data-testid="product-3-price"
+                    >
+                      7.99
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full border border-gray-200 px-2 py-1 rounded-md sm:max-w-xs flex justify-around items-center"
+              >
+                <button
+                  aria-label="Remove One Item"
+                  class="w-8 h-8 rounded-md flex items-center justify-center cursor-pointer disabled:cursor-not-allowed text-lg hover:bg-gray-100 hover:border hover:border-gray-300 text-lg icon-btn"
+                  data-testid="product-3-remove"
+                  disabled=""
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                    />
+                  </svg>
+                </button>
+                <span
+                  class="text-lg px-5  border rounded-md text-center"
+                  data-testid="product-3-count"
+                >
+                  0
+                </span>
+                <button
+                  aria-label="Add One Item"
+                  class="w-8 h-8 rounded-md flex items-center justify-center cursor-pointer disabled:cursor-not-allowed text-lg hover:bg-gray-100 hover:border hover:border-gray-300 text-lg icon-btn"
+                  data-testid="product-3-add"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <button
+                class="w-full sm:max-w-xs text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-300 font-medium rounded-md text-sm px-5 py-2.5 disabled:bg-gray-400 disabled:cursor-not-allowed dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                data-testid="product-3-clear"
+                disabled=""
+              >
+                Remove all Items
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-testid="product-5"
+      >
+        <div
+          class="flex flex-col sm:flex-row rounded-md overflow-hidden bg-white p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+        >
+          <div
+            class="img relative w-full h-[380px] sm:w-[150px] sm:h-[220px]"
+          >
+            <img
+              alt="Product Image"
+              class="rounded-md"
+              data-nimg="fill"
+              data-testid="product-5-img"
+              decoding="async"
+              fetchpriority="high"
+              sizes="100vw"
+              src="/_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Ff%2F7%2F1%2F8%2Ff718a4011ddf92f48aeefff6da0f475178694599_cly0842_1.jpg%3Fimwidth%3D1024&w=3840&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Ff%2F7%2F1%2F8%2Ff718a4011ddf92f48aeefff6da0f475178694599_cly0842_1.jpg%3Fimwidth%3D1024&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Ff%2F7%2F1%2F8%2Ff718a4011ddf92f48aeefff6da0f475178694599_cly0842_1.jpg%3Fimwidth%3D1024&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Ff%2F7%2F1%2F8%2Ff718a4011ddf92f48aeefff6da0f475178694599_cly0842_1.jpg%3Fimwidth%3D1024&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Ff%2F7%2F1%2F8%2Ff718a4011ddf92f48aeefff6da0f475178694599_cly0842_1.jpg%3Fimwidth%3D1024&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Ff%2F7%2F1%2F8%2Ff718a4011ddf92f48aeefff6da0f475178694599_cly0842_1.jpg%3Fimwidth%3D1024&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Ff%2F7%2F1%2F8%2Ff718a4011ddf92f48aeefff6da0f475178694599_cly0842_1.jpg%3Fimwidth%3D1024&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Ff%2F7%2F1%2F8%2Ff718a4011ddf92f48aeefff6da0f475178694599_cly0842_1.jpg%3Fimwidth%3D1024&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn-img.prettylittlething.com%2Ff%2F7%2F1%2F8%2Ff718a4011ddf92f48aeefff6da0f475178694599_cly0842_1.jpg%3Fimwidth%3D1024&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; object-position: 50% 30%; color: transparent;"
+            />
+          </div>
+          <div
+            class="info flex-1 px-2 sm:px-4 py-2 flex flex-col"
+          >
+            <div
+              class="flex justify-between"
+            >
+              <h2
+                class="text-xl font-semibold"
+              >
+                Red Pin Stripe Belt T Shirt Dress
+              </h2>
+            </div>
+            <div
+              class="flex-1 flex flex-col items-center sm:items-end justify-end gap-3"
+            >
+              <div
+                class="flex justify-between items-center w-full sm:max-w-xs mt-6"
+              >
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <p
+                    class="text-lg font-medium"
+                  >
+                    Color:
+                  </p>
+                  <div
+                    class="w-6 h-6 rounded-md bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+                    data-testid="product-5-color"
+                    style="background-color: rgb(255, 0, 0);"
+                  >
+                    <span
+                      class="sr-only color-value"
+                    >
+                      Red
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center space-x-3"
+                >
+                  <p
+                    class="text-lg font-medium"
+                  >
+                    Price:
+                  </p>
+                  <p
+                    class="text-xl font-medium"
+                  >
+                    £
+                    <span
+                      data-testid="product-5-price"
+                    >
+                      17.00
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full border border-gray-200 px-2 py-1 rounded-md sm:max-w-xs flex justify-around items-center"
+              >
+                <button
+                  aria-label="Remove One Item"
+                  class="w-8 h-8 rounded-md flex items-center justify-center cursor-pointer disabled:cursor-not-allowed text-lg hover:bg-gray-100 hover:border hover:border-gray-300 text-lg icon-btn"
+                  data-testid="product-5-remove"
+                  disabled=""
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                    />
+                  </svg>
+                </button>
+                <span
+                  class="text-lg px-5  border rounded-md text-center"
+                  data-testid="product-5-count"
+                >
+                  0
+                </span>
+                <button
+                  aria-label="Add One Item"
+                  class="w-8 h-8 rounded-md flex items-center justify-center cursor-pointer disabled:cursor-not-allowed text-lg hover:bg-gray-100 hover:border hover:border-gray-300 text-lg icon-btn"
+                  data-testid="product-5-add"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <button
+                class="w-full sm:max-w-xs text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-300 font-medium rounded-md text-sm px-5 py-2.5 disabled:bg-gray-400 disabled:cursor-not-allowed dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                data-testid="product-5-clear"
+                disabled=""
+              >
+                Remove all Items
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full lg:w-[300px] lg:h-[400px] p-4 rounded-md border bg-white flex justify-between"
+    >
+      <p
+        class="text-lg font-medium"
+      >
+        Cart Total:
+      </p>
+      <p
+        class="text-2xl font-medium"
+      >
+        £
+        <span
+          data-testid="cart-total"
+        >
+          0.00
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,4 +1,4 @@
-import { Product } from '@/components/ProductItem';
+// import { Product } from '@/components/ProductItem';
 
 describe('Cart', () => {
   beforeEach(() => {
@@ -12,7 +12,7 @@ describe('Cart', () => {
   });
   it('Test Listing, Filtering, Adding to Cart, Removing from Cart, and Emptying Cart', () => {
     cy.visit('http://localhost:3000');
-    cy.fixture('products.json').then((products: Product[]) => {
+    cy.fixture('products.json').then((products) => {
       const product = products[0];
       /*
         PLT-1: Viewing product listings
@@ -33,7 +33,7 @@ describe('Cart', () => {
         .children()
         .should(
           'have.length',
-          products.filter((item) => item.colour === 'Black').length
+          products.filter((item: any) => item.colour === 'Black').length
         );
       // Select Red color
       cy.get('#react-select-color-filter-input').select('Red');
@@ -41,7 +41,7 @@ describe('Cart', () => {
         .children()
         .should(
           'have.length',
-          products.filter((item) => item.colour === 'Red').length
+          products.filter((item: any) => item.colour === 'Red').length
         );
       // Clear filter
       cy.get('.rs__clear-indicator').click();

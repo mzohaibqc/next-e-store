@@ -39,22 +39,21 @@ export default function ProductItem({ product, className }: Props) {
   return (
     <div className={className} data-testid={`product-${product.id}`}>
       <div className="flex flex-col sm:flex-row rounded-md overflow-hidden bg-white p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-        <div className="img relative">
+        <div className="img relative w-full h-[380px] sm:w-[150px] sm:h-[220px]">
           <Image
-            src={product.img}
-            width={150}
-            height={280}
-            alt="Product Image"
-            style={{ objectFit: 'contain', width: 'auto' }}
-            className="rounded-md"
+            fill
             priority
+            src={product.img}
+            alt="Product Image"
+            className="rounded-md"
             data-testid={`product-${product.id}-img`}
+            style={{ objectFit: 'cover', objectPosition: '50% 30%' }}
           />
         </div>
-        <div className="info flex-1 px-4 py-2 flex flex-col">
+        <div className="info flex-1 px-2 sm:px-4 py-2 flex flex-col">
           <div className="flex justify-between">
             <h2 className="text-xl font-semibold">{product.name}</h2>
-            <Button
+            {/* <Button
               onClick={handleClearItem}
               disabled={disabled}
               className={classNames('text-lg icon-btn')}
@@ -62,27 +61,29 @@ export default function ProductItem({ product, className }: Props) {
               data-testid={`product-${product.id}-clear`}
             >
               <Trash />
-            </Button>
+            </Button> */}
           </div>
-          <div className="flex items-center space-x-4 mt-10">
-            <p className="text-lg font-medium">Price:</p>
-            <p className="text-2xl font-medium">
-              &pound;{' '}
-              <span data-testid={`product-${product.id}-price`}>
-                {product.price.toFixed(2)}
-              </span>
-            </p>
-          </div>
-          <div className="flex items-center space-x-4">
-            <p className="text-lg font-medium">Color:</p>
-            <Color
-              color={product.colour}
-              data-testid={`product-${product.id}-color`}
-            />
-          </div>
-          <div className="flex-1"></div>
-          <div className="flex flex-col justify-end items-end w-full mt-6">
-            <div className="w-full border border-gray-200 px-2 py-1 rounded-md max-w-xs flex justify-around items-center">
+
+          <div className="flex-1 flex flex-col items-center sm:items-end justify-end gap-3">
+            <div className="flex justify-between items-center w-full sm:max-w-xs mt-6">
+              <div className="flex items-center space-x-3">
+                <p className="text-lg font-medium">Color:</p>
+                <Color
+                  color={product.colour}
+                  data-testid={`product-${product.id}-color`}
+                />
+              </div>
+              <div className="flex items-center space-x-3">
+                <p className="text-lg font-medium">Price:</p>
+                <p className="text-xl font-medium">
+                  &pound;
+                  <span data-testid={`product-${product.id}-price`}>
+                    {product.price.toFixed(2)}
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div className="w-full border border-gray-200 px-2 py-1 rounded-md sm:max-w-xs flex justify-around items-center">
               <Button
                 onClick={handleRemoveItem}
                 disabled={disabled}
@@ -107,6 +108,14 @@ export default function ProductItem({ product, className }: Props) {
                 <Add />
               </Button>
             </div>
+            <button
+              onClick={handleClearItem}
+              disabled={disabled}
+              data-testid={`product-${product.id}-clear`}
+              className="w-full sm:max-w-xs text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-300 font-medium rounded-md text-sm px-5 py-2.5 disabled:bg-gray-400 disabled:cursor-not-allowed dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            >
+              Remove all Items
+            </button>
           </div>
         </div>
       </div>
