@@ -1,6 +1,6 @@
 # E-Store
 
-![Coverage](./coverage/coverage.svg)
+<img src="./coverage/coverage.svg" width="170" height="30" alt="Coverage" />
 
 All components have complete code coverage and are fully unit tested. E2E tests are cypress based.
 

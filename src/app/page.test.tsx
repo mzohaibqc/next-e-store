@@ -1,26 +1,32 @@
 import { render, screen } from '@testing-library/react';
-import { expect, describe, test, vi } from 'vitest';
+import { expect, describe, test, vi, beforeEach, afterEach } from 'vitest';
 import { Product } from '@/components/ProductItem';
 import Page from './page';
 
+const fetch = vi.fn();
+const actualFetch = global.fetch;
+
 describe('Page', () => {
+  beforeEach(() => {
+    global.fetch = fetch;
+  });
+  afterEach(() => {
+    global.fetch = actualFetch;
+  });
   test('HomePage should show all data', async () => {
+    fetch.mockResolvedValue(createFetchResponse(products));
     const Result = await Page();
     const { container } = render(Result);
     // save snapshot
     expect(container).toMatchSnapshot();
   });
   test('HomePage should show error message if api fails', async () => {
-    const actualFetch = global.fetch;
-    const fetch = vi.fn();
-    global.fetch = vi.fn();
     fetch.mockRejectedValue(new Error('Something went wrong.'));
     const Result = await Page();
     const { container } = render(Result);
     expect(screen.findByText('Unable to get products')).toBeDefined();
     // save snapshot
     expect(container).toMatchSnapshot();
-    global.fetch = actualFetch;
   });
 });
 function createFetchResponse(data: Product[]) {

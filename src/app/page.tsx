@@ -1,5 +1,6 @@
 import { type Product } from '@/components/ProductItem';
 import Products from '@/components/Products';
+import { API_URL } from '@/config';
 import { ProductsProvider } from '@/store';
 
 type ApiResponse = {
@@ -9,9 +10,7 @@ type ApiResponse = {
 
 async function getProducts(): Promise<ApiResponse> {
   try {
-    const products = await fetch(
-      'https://my-json-server.typicode.com/benirvingplt/products/products'
-    ).then((res) => res.json());
+    const products = await fetch(API_URL).then((res) => res.json());
     return { products };
   } catch (error) {
     return { error: 'Unable to get products', products: [] };
