@@ -11,7 +11,7 @@ exports[`Products > Products should get data form store and show all products 1`
       Products
     </h1>
     <div
-      class="w-full max-w-xs css-b62m3t-container"
+      class="w-full sm:max-w-xs css-b62m3t-container"
       id="color-filter"
     >
       <span

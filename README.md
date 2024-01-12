@@ -1,6 +1,6 @@
 # E-Store
 
-<img src="./coverage/coverage.svg" width="170" height="30" alt="Coverage" />
+<img src="https://gist.githubusercontent.com/mzohaibqc/3b32f9904f8a8e0ebe7dbf8f4417a1f9/raw/1618ae740e2f8ab4d1080c0eda3fbbcd42ad9bda/coverage.svg" width="170" height="30" alt="Coverage" />
 
 All components have complete code coverage and are fully unit tested. E2E tests are cypress based.
 
@@ -24,7 +24,7 @@ npm run cy:open
 
 ## Code Coverage
 
-![Code Coverage](public/code-coverage.png)
+![Code Coverage](public/coverage.png)
 
 ## Task
 

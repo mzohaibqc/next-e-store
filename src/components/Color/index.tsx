@@ -1,14 +1,8 @@
-type ColorProps = React.ComponentPropsWithoutRef<'div'> & {
+type Props = React.ComponentPropsWithoutRef<'div'> & {
   color: string;
 };
 
-export const colorMap: Record<string, string> = {
-  Black: '#000000',
-  Red: '#FF0000',
-  Stone: '#EFCFB6',
-};
-
-export default function Color({ color, ...rest }: ColorProps) {
+export default function Color({ color, ...rest }: Props) {
   return (
     <div
       {...rest}
@@ -19,3 +13,9 @@ export default function Color({ color, ...rest }: ColorProps) {
     </div>
   );
 }
+
+export const colorMap: Record<string, string> = {
+  Black: '#000000',
+  Red: '#FF0000',
+  Stone: '#EFCFB6',
+};

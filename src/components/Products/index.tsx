@@ -15,7 +15,7 @@ export default function Products() {
           colorOptions={colorOptions}
           color={color}
           onChange={setColor}
-          className="w-full max-w-xs"
+          className="w-full sm:max-w-xs"
         />
       </div>
       <div className="flex flex-col lg:flex-row gap-4 pb-6">

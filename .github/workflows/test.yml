@@ -5,13 +5,12 @@ name: Test Coverage
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,13 +18,20 @@ jobs:
         node-version: [20.10]
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm run coverage
-    - run: npm run coverage-badge
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm run coverage
+      - run: npm run coverage-badge
+      - name: Save Coverage Badge
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_SECRET }}
+          gist_id: 3b32f9904f8a8e0ebe7dbf8f4417a1f9
+          file_path: coverage/coverage.svg
+          file_type: text
