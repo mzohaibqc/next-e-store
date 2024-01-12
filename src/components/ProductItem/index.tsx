@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useCallback, useMemo } from 'react';
 import Button from '@/components/Button';
 import Color from '@/components/Color';
-import { Add, Minus, Trash } from '@/components/Icons';
+import { Add, Minus } from '@/components/Icons';
 import { useCart } from '@/store';
 
 export type Product = {
@@ -53,15 +53,6 @@ export default function ProductItem({ product, className }: Props) {
         <div className="info flex-1 px-2 sm:px-4 py-2 flex flex-col">
           <div className="flex justify-between">
             <h2 className="text-xl font-semibold">{product.name}</h2>
-            {/* <Button
-              onClick={handleClearItem}
-              disabled={disabled}
-              className={classNames('text-lg icon-btn')}
-              aria-label="Remove Item"
-              data-testid={`product-${product.id}-clear`}
-            >
-              <Trash />
-            </Button> */}
           </div>
 
           <div className="flex-1 flex flex-col items-center sm:items-end justify-end gap-3">
