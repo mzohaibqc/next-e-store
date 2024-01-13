@@ -9,8 +9,8 @@ export default function Products() {
   const colorOptions = products.map((product) => product.colour);
   return (
     <>
-      <div className="py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        <h1 className="text-3xl font-semibold">Products</h1>
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <h1 className="text-3xl font-medium">Products</h1>
         <ColorFilter
           colorOptions={colorOptions}
           color={color}
@@ -18,9 +18,8 @@ export default function Products() {
           className="w-full sm:max-w-xs"
         />
       </div>
-      <div className="flex flex-col lg:flex-row gap-4 pb-6">
+      <div className="flex flex-col lg:flex-row gap-4 py-6">
         <ProductList products={filteredProducts} />
-        <Cart />
       </div>
     </>
   );

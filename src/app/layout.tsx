@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
+import { Urbanist } from 'next/font/google';
 import Header from '@/components/Header';
 import { CartProvider } from '@/store';
 
 import './globals.css';
 
-const roboto = Roboto({
+const font = Urbanist({
   weight: ['400', '500'],
   subsets: ['latin'],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={font.className}>
         <Header />
         <main className="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
           <CartProvider>{children}</CartProvider>
