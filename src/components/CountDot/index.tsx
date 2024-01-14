@@ -1,13 +1,13 @@
-import classNames from 'classnames';
 import React from 'react';
+import classNames from 'classnames';
 
-type Props = {
+type Props = React.ComponentPropsWithoutRef<'span'> & {
   count: number;
-  className?: string;
 };
-export default function CountDot({ count, className }: Props) {
+export default function CountDot({ count, className, ...rest }: Props) {
   return (
     <span
+      {...rest}
       className={classNames(
         'text-xs bg-red-600 text-white rounded-full w-5 h-5 flex justify-center items-center',
         className

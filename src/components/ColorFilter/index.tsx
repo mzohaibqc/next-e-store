@@ -53,13 +53,13 @@ export default function ProductFilter({
       classNames={{
         control: (state) =>
           classNames(
-            '!rounded-md bg-white dark:bg-gray-700 !border-gray-500 dark:!border-gray-600',
+            '!rounded-md bg-white dark:bg-gray-800 !border-gray-300 dark:!border-gray-600',
             {
               '!border-gray-800 dark:!border-gray-500 !rounded-md !shadow-[0_0_0_1px_#000000] dark:!shadow-[0_0_0_1px_#333]':
                 state.isFocused,
             }
           ),
-        placeholder: (state) => 'text-gray-700 dark:text-gray-300',
+        placeholder: (state) => 'text-gray-300 dark:text-gray-500',
         menu: (state) => '!bg-white dark:!bg-gray-900',
         option: (state) =>
           classNames(

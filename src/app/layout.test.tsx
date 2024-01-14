@@ -3,6 +3,10 @@ import { expect, describe, test, vi, beforeEach } from 'vitest';
 import { Product } from '@/components/ProductItem';
 import Layout from './layout';
 
+vi.mock('@/store/ThemeProvider', () => ({
+  Provider: vi.fn(({ children }: { children: React.ReactNode }) => children),
+}));
+
 describe('Layout', () => {
   beforeEach(() => {
     vi.mock('next/font/google', () => ({

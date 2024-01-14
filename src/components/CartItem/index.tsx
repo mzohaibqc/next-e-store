@@ -16,7 +16,7 @@ type Props = {
 export default function CartItem({ product, className }: Props) {
   const { addItem, removeItem, clearItem, cart } = useCart();
   const count = useMemo(
-    () => cart.find((item) => item.id === product.id)?.count || 0,
+    () => Number(cart.find((item) => item.id === product.id)?.count),
     [cart, product]
   );
   const handleAddItem = useCallback(() => addItem(product), [addItem, product]);

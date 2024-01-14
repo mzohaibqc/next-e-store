@@ -15,7 +15,7 @@ export default function Button({
   return (
     <button
       className={classNames(
-        'text-gray-900 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-md text-sm p-1 w-10 h-10 inline-flex items-center justify-center',
+        'text-gray-900 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-md text-sm p-1 inline-flex items-center justify-center',
         className,
         {
           'w-5 h-5': size === 'small',

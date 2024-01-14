@@ -20,17 +20,17 @@ export default function CartPopover() {
     <Popover className="relative">
       {({ open }) => (
         <>
-          <Popover.Button
-            as={Button}
-            size="large"
-            // className={`
-            //     ${open ? 'text-black' : 'text-black/90'}
-            //     text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-md text-sm p-1 w-8 h-8 inline-flex items-center justify-center relative`}
-          >
-            <CartLogo className="w-6 h-6 dark:text-gray-200 text-gray-900" />
+          <Popover.Button as={'div'}>
+            <Button data-testid="cart-button" size="large">
+              <CartLogo className="w-6 h-6 dark:text-gray-200 text-gray-900" />
+            </Button>
 
             {itemsCount > 0 && (
-              <CountDot count={itemsCount} className="absolute -top-2 left-6" />
+              <CountDot
+                count={itemsCount}
+                className="absolute -top-2 left-6"
+                data-testid="cart-count"
+              />
             )}
           </Popover.Button>
           <Transition
