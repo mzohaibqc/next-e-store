@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint --fix",
     "test": "vitest",
-    "coverage": "vitest run --coverage",
+    "coverage": "vitest run --coverage --allowOnly",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "coverage-badge": "coverage-badger -r coverage/clover.xml -d coverage/"
