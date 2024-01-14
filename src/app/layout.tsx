@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
+import { Urbanist } from 'next/font/google';
 import Header from '@/components/Header';
 import { CartProvider } from '@/store';
 import { Provider as ThemeProvider } from '@/store';
 
 import './globals.css';
 
-const font = Roboto({
+const font = Urbanist({
   weight: ['400', '500'],
   subsets: ['latin'],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={font.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <CartProvider>

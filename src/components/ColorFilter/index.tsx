@@ -18,7 +18,7 @@ type Props = {
   className?: string;
 };
 
-export default function ProductFilter({
+export default function ColorFilter({
   color,
   onChange,
   colorOptions,
@@ -38,6 +38,7 @@ export default function ProductFilter({
       })),
     [colorOptions]
   );
+
   return (
     <Select
       id="color-filter"
@@ -47,8 +48,14 @@ export default function ProductFilter({
       placeholder="Select Color"
       aria-label="Filter Color"
       classNamePrefix="rs"
-      // aria-activedescendant="color-filter"
-      components={{ SingleValue, Option }}
+      aria-activedescendant="color-filter"
+      components={{
+        SingleValue,
+        Option,
+        Input: (props) => (
+          <components.Input {...props} aria-activedescendant={undefined} />
+        ),
+      }}
       isClearable
       classNames={{
         control: (state) =>

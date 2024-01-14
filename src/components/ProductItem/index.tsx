@@ -51,6 +51,7 @@ export default function ProductItem({ product, className }: Props) {
             className="rounded-t-md"
             data-testid={`product-${product.id}-img`}
             style={{ objectFit: 'cover', objectPosition: '50% 20%' }}
+            sizes="100%"
           />
         </div>
         <div className="info flex-1 p-3 flex flex-col">

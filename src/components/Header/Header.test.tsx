@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { expect, describe, test, vi } from 'vitest';
+import { expect, describe, test } from 'vitest';
 import Header from '@/components/Header';
 
 describe('Header', () => {

@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { expect, describe, test } from 'vitest';
 import Products from '@/components/Products';
 import * as store from '@/store';

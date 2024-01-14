@@ -55,10 +55,12 @@ describe('Cart', () => {
       cy.findByTestId(`product-${product.id}-add`).click();
       cy.findByTestId(`product-${product.id}-add`).click();
       cy.findByTestId(`product-${product.id}-count`).should('have.text', '2');
+      cy.findByTestId('cart-button').click();
       cy.findByTestId('cart-total').should(
         'have.text',
         (2 * product.price).toFixed(2)
       );
+      cy.findByTestId('cart-button').click();
       /*
       PLT-3: Reduce quantity
       Given I am viewing the products listings
@@ -68,10 +70,12 @@ describe('Cart', () => {
     */
       cy.findByTestId(`product-${product.id}-remove`).click();
       cy.findByTestId(`product-${product.id}-count`).should('have.text', '1');
+      cy.findByTestId('cart-button').click();
       cy.findByTestId('cart-total').should(
         'have.text',
         (1 * product.price).toFixed(2)
       );
+      cy.findByTestId('cart-button').click();
       /*
       PLT-4: Remove from basket
       Given I am viewing the products listings
@@ -81,7 +85,9 @@ describe('Cart', () => {
     */
       cy.findByTestId(`product-${product.id}-clear`).click();
       cy.findByTestId(`product-${product.id}-count`).should('have.text', '0');
+      cy.findByTestId('cart-button').click();
       cy.findByTestId('cart-total').should('have.text', (0).toFixed(2));
+      cy.findByTestId('cart-button').click();
     });
   });
 });

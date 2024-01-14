@@ -10,7 +10,7 @@ vi.mock('@/store/ThemeProvider', () => ({
 describe('Layout', () => {
   beforeEach(() => {
     vi.mock('next/font/google', () => ({
-      Roboto: () => ({
+      Urbanist: () => ({
         style: {
           fontFamily: 'mocked',
         },
