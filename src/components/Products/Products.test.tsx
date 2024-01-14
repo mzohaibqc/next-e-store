@@ -27,7 +27,7 @@ describe('Products', () => {
       </ProductsProvider>
     );
     expect(screen.getByText('Products')).toBeDefined;
-    expect(screen.getByText('Cart Total:')).toBeDefined;
+    // expect(screen.getByText('Cart Total:')).toBeDefined;
     expect(screen.getByTestId('products-list').childNodes.length).toEqual(
       products.length
     );

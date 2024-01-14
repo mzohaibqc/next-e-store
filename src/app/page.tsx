@@ -24,7 +24,7 @@ export default async function Home() {
     return <div className="py-20">{error}</div>;
   }
   return (
-    <div className="mt-2 md:mt-4">
+    <div className="mt-4 lg:mt-6">
       <ProductsProvider products={products}>
         <Products />
       </ProductsProvider>

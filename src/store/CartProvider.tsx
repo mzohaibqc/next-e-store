@@ -40,16 +40,23 @@ function updateCartItemCount(
   id: number,
   count: number
 ): CartStoreState['cart'] {
-  return state.cart.map((cartItem) => {
-    if (cartItem.id === id) {
-      return {
-        ...cartItem,
-        count: cartItem.count + count,
-      };
-    }
-    return cartItem;
-  });
+  return state.cart
+    .map((cartItem) => {
+      if (cartItem.id === id) {
+        return {
+          ...cartItem,
+          count: cartItem.count + count,
+        };
+      }
+      return cartItem;
+    })
+    .filter((cartItem) => cartItem.count > 0);
 }
+
+function updateTotal(total: number, change: number): number {
+  return parseFloat((total + change).toFixed(2));
+}
+
 export function cartReducer(
   state: CartStoreState,
   action: CartAction
@@ -61,13 +68,13 @@ export function cartReducer(
       if (existingItem) {
         return {
           ...state,
-          total: state.total + item.price,
+          total: updateTotal(state.total, item.price),
           cart: updateCartItemCount(state, item.id, 1),
         };
       }
       return {
         ...state,
-        total: state.total + item.price,
+        total: updateTotal(state.total, item.price),
         cart: [...state.cart, { ...item, count: 1 }],
       };
     case 'REMOVE_ITEM':
@@ -76,7 +83,7 @@ export function cartReducer(
       }
       return {
         ...state,
-        total: state.total - existingItem.price,
+        total: updateTotal(state.total, -1 * item.price),
         cart: updateCartItemCount(state, existingItem.id, -1),
       };
     case 'CLEAR_ITEM':
@@ -85,7 +92,10 @@ export function cartReducer(
       }
       return {
         ...state,
-        total: state.total - existingItem.count * existingItem.price,
+        total: updateTotal(
+          state.total,
+          -1 * existingItem.count * existingItem.price
+        ),
         cart: state.cart.filter((cartItem) => cartItem.id !== existingItem.id),
       };
 

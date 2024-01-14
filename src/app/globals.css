@@ -13,7 +13,3 @@
 button, a {
   @apply focus:border-black focus:outline-none focus:ring-2 focus:ring-black;
 }
-
-body {
-  background: var(--background);
-}
