@@ -14,8 +14,10 @@
     "coverage-badge": "coverage-badger -r coverage/clover.xml -d coverage/"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
     "classnames": "^2.5.1",
     "next": "14.0.4",
+    "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
     "react-select": "^5.8.0"

@@ -52,15 +52,24 @@ export default function ProductFilter({
       isClearable
       classNames={{
         control: (state) =>
-          classNames('!border-gray-300 !rounded-md', {
-            '!border-gray-800 !rounded-md !shadow-[0_0_0_1px_#000000]':
-              state.isFocused,
-          }),
+          classNames(
+            '!rounded-md bg-white dark:bg-gray-800 !border-gray-300 dark:!border-gray-600',
+            {
+              '!border-gray-800 dark:!border-gray-500 !rounded-md !shadow-[0_0_0_1px_#000000] dark:!shadow-[0_0_0_1px_#333]':
+                state.isFocused,
+            }
+          ),
+        placeholder: (state) => 'text-gray-300 dark:text-gray-500',
+        menu: (state) => '!bg-white dark:!bg-gray-900',
         option: (state) =>
-          classNames('!bg-white', {
-            '!bg-gray-300 !text-black': state.isSelected,
-            '!bg-gray-200': state.isFocused,
-          }),
+          classNames(
+            '!bg-white dark:!bg-gray-900 !text-gray-900 dark:!text-gray-200',
+            {
+              '!bg-gray-400 !text-black': state.isSelected,
+              '!bg-gray-500 dark:!bg-gray-700': state.isFocused,
+            }
+          ),
+        singleValue: (state) => '!text-gray-900 dark:!text-gray-200',
       }}
       value={value}
       onChange={(option) => {

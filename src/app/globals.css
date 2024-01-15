@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #FBFBFB;
+  --background: #ffffff;
   --soft-grey: #DFDFDF;
   --grey: #445964;
   --dark-grey: #263138;
@@ -12,8 +12,4 @@
 
 button, a {
   @apply focus:border-black focus:outline-none focus:ring-2 focus:ring-black;
-}
-
-body {
-  background: var(--background);
 }
